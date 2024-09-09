@@ -1,0 +1,53 @@
+<!--
+Nama    : Eusthachius Rivan Verianto Norel
+NPM     : 140810230016
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KALKULATOR SEDERHANA</title>
+    </head>
+
+    <script>
+        function penjumlahan() { 
+            var hasil = parseFloat(document.kalkulator.bil1.value) + parseFloat(document.kalkulator.bil2.value);
+            document.kalkulator.hasil.value = hasil;
+        }
+        function pengurangan() { 
+            var hasil = parseFloat(document.kalkulator.bil1.value) - parseFloat(document.kalkulator.bil2.value);
+            document.kalkulator.hasil.value = hasil;
+        }
+        function perkalian() { 
+            var hasil = parseFloat(document.kalkulator.bil1.value) * parseFloat(document.kalkulator.bil2.value);
+            document.kalkulator.hasil.value = hasil;
+        }
+        function pembagian() { 
+            var hasil = parseFloat(document.kalkulator.bil1.value) / parseFloat(document.kalkulator.bil2.value);
+            document.kalkulator.hasil.value = hasil;
+        }
+    </script>
+    
+    <body>
+        <h1>Selamat datang di program Kalkulator Sederhana!!</h1>
+        <hr>
+
+        <form name="kalkulator">
+            <p>
+                Bil 1 <input type="text" name="bil1" size="20">
+            </p>
+            <p>
+                Bil 2 <input type="text" name="bil2" size="20">
+            </p>
+            <p>
+                Hasil <input type="text" name="hasil" size="20" readonly>
+            </p>
+            <p>
+                <input type="button" value="+" onclick="penjumlahan()">
+                <input type="button" value="-" onclick="pengurangan()">
+                <input type="button" value="x" onclick="perkalian()">
+                <input type="button" value="/" onclick="pembagian()">
+            </p>
+        </form>
+    </body>
+</html>

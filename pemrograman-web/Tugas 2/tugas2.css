@@ -1,0 +1,59 @@
+/* 
+Nama    : Eusthachius Rivan Verianto Norel
+NPM     : 140810230016
+*/
+
+body {
+    background-color: #ffffe0; /* Kuning-muda */
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 30px 40px; /* Top: 30px, Left: 40px, Down: 30px, Right: 40px */
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+hr {
+    border: 1 px;
+    color: #333;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    color: #092477; /* Tulisan biru */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #333;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+p {
+    text-align: center;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}

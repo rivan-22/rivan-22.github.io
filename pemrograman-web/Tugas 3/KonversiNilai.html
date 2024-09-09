@@ -1,0 +1,60 @@
+<!--
+Nama    : Eusthachius Rivan Verianto Norel
+NPM     : 140810230016
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KONVERSI NILAI</title>
+    </head>
+
+    <script language="Javascript">
+        function konversi(nilai) {
+            var result;
+
+            if (nilai >= 0 && nilai <= 40) {
+                result = "E";
+            } else if (nilai > 40 && nilai <= 55) {
+                result = "D";
+            } else if (nilai > 55 && nilai <= 60) {
+                result = "C";
+            } else if (nilai > 60 && nilai <= 65) {
+                result = "BC";
+            } else if (nilai > 65 && nilai <= 70) {
+                result = "B";
+            } else if (nilai > 70 && nilai <= 80) {
+                result = "AB";
+            } else if (nilai > 80 && nilai <= 100) {
+                result = "A";
+            } else {
+                result = "Nilai tidak valid!";
+            }
+
+            return result;
+        }
+
+        function tampilkanHasil() {
+            var nilai = document.getElementById("inputNilai").value; // Mengambil nilai input
+            var hasil = konversi(nilai); // Memanggil fungsi konversi
+            document.getElementById("hasilKonversi").innerHTML = hasil; // Menampilkan hasil di <span>
+        }
+    </script>
+    
+    <body>
+        <h1>Selamat datang di program Konversi Nilai!!</h1>
+        <hr>
+
+        <form>
+            <p> 
+                Nilai: <input type="text" id="inputNilai" size="20">
+            </p>
+            <p>
+                Hasil Konversi: <span id="hasilKonversi"></span>
+            </p>
+            <p>
+                <input type="button" value="Konversi" name="B1" onclick="tampilkanHasil()">
+            </p>
+        </form>
+    </body>
+</html>
